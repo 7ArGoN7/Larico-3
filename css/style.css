@@ -1,0 +1,208 @@
+*{
+    margin: 0 ;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100&display=swap');
+
+body{
+    background-image:url('../images/bg.png') ;    
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Josefin Slab', serif;    
+
+
+    
+
+}
+
+
+img.background {
+    width: 1980;
+    height: 920;
+  
+}  
+
+header{
+
+    padding: 10px 5%;
+    
+
+}
+
+
+header>*{
+    display: inline-block;
+    width: 450px;
+
+}
+
+#inf{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+#m{
+    display: flex;
+    justify-content: center;
+}
+
+#fi{
+    display: flex;
+    justify-content: center;
+}
+
+#o{
+    display: flex;
+    justify-content: center;
+}
+
+#b{
+    display: flex;
+    justify-content: center;
+}
+
+
+.pustota{
+    
+        display: flex;
+        justify-content: right;
+        display: inline;
+        font-size: 25px;
+    
+}
+
+#h{
+    display: flex;
+    justify-content: end;
+}
+
+#ss{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+#pp{
+    font-size: 35px;
+
+
+}
+
+#f{
+    font-size: 25px;
+
+}
+
+#h:hover{
+    display: flex;
+    justify-content: end;
+    color: blueviolet;
+    font-size: 35px;
+}
+
+#h:active{
+    display: flex;
+    justify-content: end;
+    color: rgb(43, 226, 92);
+    font-size: 20px;
+}
+
+.animtwo{
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+    background-color: blue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.animtwo:hover{
+    animation-play-state: paused;
+    }
+
+@keyframes anim2 {
+    0%{
+        transform:scale(2);
+        animation-timing-function:ease ;
+        transform:rotate(85);
+    }
+    100%{
+        transform:scale(1.5);
+        background-color: blue;
+        animation-timing-function:ease-out;
+        transform:rotate(50);
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .inf{
+        width:40%;
+    }
+    
+    .main{
+        margin: 0 auto;
+        position: static;
+    }
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    }
+    .main{
+        min-height:65vh;
+    }
+    .main{
+        width:30%;
+    }
+
+
+/* телефоны горизонтально */
+@media (max-width: 767px) {
+    
+    
+    header,article{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ff{
+        width: 50%;
+        padding-bottom: 10px;
+    }
+}
+
+/* телефоны вертикально */
+@media (max-width: 480px) {
+
+    header{
+        flex-direction: column;
+    }
+    nav{
+        margin-right:0;
+    }
+    li{
+        margin-right: 5px;
+    }
+    .inf{
+        width: 70%;
+    }
+    .s{
+        flex-direction: column;
+        padding-left:5px;
+    }
+}
